@@ -1,0 +1,22 @@
+/* macOS: traffic lights sit inside the inset area */
+.titlebar--mac {
+  height: 28px;
+  -webkit-app-region: drag;
+  padding-left: 80px;
+}
+
+/* Windows/Linux: custom title + controls */
+.titlebar--win {
+  height: 32px;
+  -webkit-app-region: drag;
+  display: flex;
+  align-items: center;
+  padding: 0 12px;
+  background: var(--color-surface);
+}
+
+.titlebar__title {
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--color-text-secondary);
+}

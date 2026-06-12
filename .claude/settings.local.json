@@ -1,0 +1,33 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm install *)",
+      "Bash(npx electron-rebuild *)",
+      "Bash(chmod +x /Users/test/Desktop/CodeSense/node_modules/.bin/electron-vite)",
+      "Bash(chmod +x /Users/test/Desktop/CodeSense/node_modules/electron-vite/bin/electron-vite.js)",
+      "Bash(chmod -R u+x /Users/test/Desktop/CodeSense/node_modules/.bin/)",
+      "Bash(npm run *)",
+      "Bash(timeout 15 npx electron-vite dev)",
+      "Bash(npx electron-vite *)",
+      "Bash(kill %1)",
+      "Bash(wait)",
+      "Bash(node -e \"const eb = require\\('/Users/test/Desktop/CodeSense/node_modules/electron-builder'\\); console.log\\('eb ok'\\)\")",
+      "Bash(sleep 8 && cat /tmp/codesense-dev.log)",
+      "Bash(pkill -f \"electron-vite dev\")",
+      "Bash(pkill -f \"electron .\")",
+      "Bash(npm run dev > /tmp/codesense-dev.log 2>&1 & *)",
+      "Bash(pkill -f \"electron\")",
+      "Bash(pkill -f \"vite\")",
+      "Bash(echo \"Started PID: $!\")",
+      "Bash(jobs)",
+      "Bash(npx tsc *)",
+      "Bash(qlmanage -t -s 1024 -o . icon.svg)",
+      "Bash(sips -g pixelWidth -g pixelHeight icon.svg.png)",
+      "Bash(which rsvg-convert *)",
+      "Bash(rm -rf icon.iconset)",
+      "Bash(mkdir icon.iconset)",
+      "Bash(node -e ' *)",
+      "Bash(iconutil -c icns icon.iconset -o /Users/test/Desktop/CodeSense/resources/icon.icns)"
+    ]
+  }
+}

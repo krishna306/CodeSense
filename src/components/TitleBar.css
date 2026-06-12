@@ -1,0 +1,38 @@
+.titlebar {
+  flex-shrink: 0;
+  -webkit-app-region: drag;
+  background: var(--color-surface);
+  border-bottom: 1px solid var(--color-border-subtle);
+}
+
+.titlebar--mac {
+  height: 28px;
+  padding-left: 80px;
+  display: flex;
+  align-items: center;
+}
+
+.titlebar--win {
+  height: 32px;
+  display: flex;
+  align-items: center;
+  padding: 0 14px;
+}
+
+.titlebar__title {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--color-text-secondary);
+  letter-spacing: .02em;
+}
+
+.titlebar__dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--color-accent);
+  opacity: 0.8;
+}

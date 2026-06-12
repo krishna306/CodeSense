@@ -1,0 +1,40 @@
+<svg width="1024" height="1024" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1c2c4a"/>
+      <stop offset="55%" stop-color="#101a30"/>
+      <stop offset="100%" stop-color="#0a1020"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#58a6ff"/>
+      <stop offset="100%" stop-color="#388bfd"/>
+    </linearGradient>
+    <linearGradient id="green" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#56d364"/>
+      <stop offset="100%" stop-color="#3fb950"/>
+    </linearGradient>
+    <filter id="glow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="18" result="b"/>
+      <feMerge>
+        <feMergeNode in="b"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- rounded squircle background -->
+  <rect x="64" y="64" width="896" height="896" rx="200" fill="url(#bg)"/>
+  <rect x="64" y="64" width="896" height="896" rx="200" fill="none" stroke="#388bfd" stroke-opacity="0.25" stroke-width="6"/>
+
+  <!-- left angle bracket -->
+  <path d="M 360 360 L 220 512 L 360 664" fill="none" stroke="url(#accent)"
+        stroke-width="58" stroke-linecap="round" stroke-linejoin="round" filter="url(#glow)"/>
+
+  <!-- right angle bracket -->
+  <path d="M 664 360 L 804 512 L 664 664" fill="none" stroke="url(#accent)"
+        stroke-width="58" stroke-linecap="round" stroke-linejoin="round" filter="url(#glow)"/>
+
+  <!-- checkmark slash: review approval -->
+  <path d="M 430 540 L 502 620 L 622 388" fill="none" stroke="url(#green)"
+        stroke-width="58" stroke-linecap="round" stroke-linejoin="round" filter="url(#glow)"/>
+</svg>
