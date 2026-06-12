@@ -24,4 +24,4 @@ coverage/
 *.sqlite3
 .electron-vite/
 out/
-.
+.claude
